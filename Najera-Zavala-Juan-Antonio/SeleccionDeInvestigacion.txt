@@ -1,0 +1,14 @@
+Para armar la pantalla de perfil usé Claude únicamente para 
+entender cómo aplicar cuatro propiedades que no vimos en clase.
+
+La propiedad actions del AppBar recibe una lista de widgets que se acomodan
+solos en la esquina superior derecha. Ahí metí un IconButton que hace el Navigator.push hacia el perfil.
+
+El widget CircleAvatar sirve para la foto de perfil. El tamaño se ajusta con radius,
+el color con backgroundColor y adentro le puse un Icon usando child.
+
+El Divider traza la línea que separa el nombre de las tarjetas. Tiene dos propiedades útiles:
+thickness para el grosor y height para el espacio que ocupa en total.
+
+Y MainAxisAlignment.spaceEvenly en el Row reparte el espacio en huecos iguales, incluyendo las orillas.
+spaceAround hace algo parecido pero deja la mitad de espacio en los extremos, así que me quedé con spaceEvenly porque seve más parejo.
